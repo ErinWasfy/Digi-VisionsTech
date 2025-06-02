@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/rental-platform
+
+keycloak:
+  realm: rental-platform
+  auth-server-url: http://localhost:8080
+  resource: springboot-app
+  credentials:
+    secret: springboot-secret
+
