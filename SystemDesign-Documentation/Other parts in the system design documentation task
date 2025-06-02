@@ -1,0 +1,32 @@
+Keycloak-based auth integration
+The lifecycle of Keycloak-based authentication integration refers to the end-to-end process of planning, implementing, using, and maintaining Keycloak in an application's identity and access management. 
+This includes both technical and operational phases.
+Keycloak is an open-source Identity and Access Management (IAM) solution developed by Red Hat. It provides features like Single Sign-On (SSO), authentication, authorization, user federation, LDAP integration, social login, 2FA, and more. Integrating Keycloak-based authentication into your application means delegating identity and access management to Keycloak while your application focuses on business logic
+////////////////////////////////////////////////////////////////////////////////////////////////////
+• Caching layer: Elastic search has built in caching capabilities that can be leveraged to store results
+of frequent queries. this reduces the query processing load on the search engine itself. the node query cache in 
+elastic search is LRU cache shared by all shards on a node caching results of queries used in the filter.Also, elastic search's shard level request cache is used for
+caching search responses consisting of aggregation.this can be used for adaptative caching strategies where system can learn and cache the result of the most frequently executed queries over time.
+ ///////////////////////////////////////////////////////////////////////////////////////////////////
+• Deployment approach (Docker/Kubernetes): 
+Docker is used to containerize the application, making it portable, consistent across environments, and easy to deploy. Each service and dependency runs in its own container, allowing microservices or modular monoliths to be isolated and independently managed.
+Key Benefits:
+Consistent dev-to-prod parity
+Isolation of dependencies
+Scalable, reproducible deployments
+Easy integration with CI/CD pipelines
+////////////////////////////////////////////////////////////////////////////////////
+• CI/CD pipeline strategy
+ automates the process of building, testing, and deploying application code to various environments, ensuring fast, reliable, and repeatable releases.
+Goals:
+Automate code validation and testing
+Detect issues early with fast feedback
+Deploy changes frequently and reliably
+Maintain high code and deployment quality
+////////////////////////////////////////////////////////////////////////
+• DB migration using Flyway
+Flyway is a lightweight, open-source database migration tool that provides version control for database schemas. It ensures that database changes are applied reliably and consistently across all environments through versioned SQL scripts.
+Benefits:
+Enables reproducible database changes
+Easy integration with CI/CD pipelines
+Tracks schema history via a metadata table
